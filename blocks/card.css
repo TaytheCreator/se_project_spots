@@ -10,6 +10,15 @@
   display: block;
 }
 
+.card__title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
 .card__content {
   display: flex;
   align-items: center;

@@ -1,5 +1,7 @@
 .profile {
   display: flex;
+  justify-content: end;
+  align-items: end;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -31,12 +33,14 @@
 }
 
 .profile__add-btn {
+  display: flex;
+  flex-direction: row;
   margin-left: auto;
   font-size: 16px;
   line-height: 100%;
-  width: 149px;
   height: 52px;
   opacity: 1;
+  gap: 8px;
   padding: 18px 32px;
   border-radius: 8px;
   background-color: #212121;

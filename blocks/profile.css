@@ -13,14 +13,24 @@
 .profile__column {
   display: flex;
   flex-direction: column;
+  height: 190px;
 }
 
 .profile__name {
   margin: 0 0 12px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
 }
 
 .profile__description {
   margin: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121b2;
 }
 
 .profile__edit-btn {
@@ -30,6 +40,13 @@
   border-style: none;
   background-color: transparent;
   margin-right: auto;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover {
+  color: #212121;
+  opacity: 100%;
 }
 
 .profile__add-btn {
@@ -45,4 +62,10 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.profile__add-btn:hover {
+  background: #212121cc;
 }

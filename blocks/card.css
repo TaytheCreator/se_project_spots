@@ -44,8 +44,8 @@
 
 @media screen and (max-width: 670px) {
   .card__image {
-    width: 288;
-    height: 318;
+    width: 288px;
+    height: 318px;
     opacity: 1;
     gap: 12px;
   }

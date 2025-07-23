@@ -48,9 +48,11 @@ This project is made so all the elements are displayed correctly on popular scre
 
 ---
 
-### 🚀 Get Started
+### 🚀 Deployment
 
-To try it locally, just open the `index.html` file in your browser.
+This project is deployed using **GitHub Pages** and can be accessed live at the following link:
+
+🔗 [Live Demo on GitHub Pages](https://taythecreator.github.io/se_project_spots/)
 
 ---
 

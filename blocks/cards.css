@@ -1,8 +1,5 @@
 .cards {
-  width: 1280px;
-  height: 970px;
   opacity: 1;
-
   border-bottom-width: 1px;
   padding-bottom: 40px;
   padding-top: 20px;
@@ -27,6 +24,6 @@
     max-width: 288px;
     opacity: 1;
     border-bottom-width: 1px;
-    margin: 0;
+    margin: 0 auto;
   }
 }

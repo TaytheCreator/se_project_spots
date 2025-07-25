@@ -18,3 +18,10 @@
   display: flex;
   justify-content: center;
 }
+
+.footer__text {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}

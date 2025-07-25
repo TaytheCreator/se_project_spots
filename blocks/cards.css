@@ -2,8 +2,7 @@
   width: 1280px;
   height: 970px;
   opacity: 1;
-  top: 310px;
-  left: 80px;
+
   border-bottom-width: 1px;
   padding-bottom: 40px;
   padding-top: 20px;
@@ -23,6 +22,11 @@
 
 @media screen and (max-width: 670px) {
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 413px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 288px);
+    max-width: 288px;
+    opacity: 1;
+    border-bottom-width: 1px;
+    margin: 0;
   }
 }

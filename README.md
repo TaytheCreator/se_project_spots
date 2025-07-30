@@ -48,6 +48,14 @@ This project is made so all the elements are displayed correctly on popular scre
 
 ---
 
+## 🎥 Screencast Demo
+
+You can watch a full walkthrough of the project in the screencast below:
+
+🔗 [Watch the Screencast on Google Drive](https://drive.google.com/file/d/10DhXu5B-m4WuYW9IohlOcadMDUeCWUwF/view?usp=sharing)
+
+---
+
 ### 🚀 Deployment
 
 This project is deployed using **GitHub Pages** and can be accessed live at the following link:

@@ -9,10 +9,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
+  transform: translateY(0);
 }
 
 .modal__container {

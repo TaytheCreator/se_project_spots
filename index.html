@@ -81,6 +81,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -110,6 +111,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
@@ -126,17 +128,17 @@
         </div>
       </div>
 
-      <div class="modal" id="preview-modal">
+      <div class="modal modal_type_preview" id="preview-modal">
         <div class="modal__image-container">
           <button
             type="button"
             class="modal__close-btn modal__close-btn_type_preview"
           ></button>
           <img src="#" alt="" class="modal__image" />
-          <p class="modal__caption">Golden Gate Bridge</p>
+          <p class="modal__caption"></p>
         </div>
       </div>
     </div>
-    <script src=".//scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

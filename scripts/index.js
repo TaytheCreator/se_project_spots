@@ -102,7 +102,7 @@ function getCardElement(data) {
 
 function renderCard(item, method = "prepend") {
   const cardElement = getCardElement(item);
-  cardsList[method](cardElement);
+  cardsList.prepend(cardElement);
 }
 
 function handleEditProfileSubmit(evt) {

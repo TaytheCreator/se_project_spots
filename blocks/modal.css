@@ -67,7 +67,6 @@
 }
 
 .modal__close-btn:hover {
-  border: 2px solid #212121;
   background-image: url(../images/close-icon-hover.png);
   opacity: 1;
 }
@@ -141,6 +140,12 @@
   cursor: pointer;
 }
 
+.modal__submit-btn:hover {
+  background-color: #343434;
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
 .modal__image-container {
   position: relative;
 }
@@ -155,10 +160,9 @@
 }
 
 .modal__caption {
+  margin: 0;
   color: white;
   background-color: #212121;
-  width: 214px;
-  height: 32px;
   border-radius: 8px;
   opacity: 1;
   top: calc(100% + 10px);
@@ -195,7 +199,6 @@
   }
 
   .modal__input {
-    box-sizing: border-box;
     width: 100%;
     font-size: 16px;
     margin: 8px 0 24px;

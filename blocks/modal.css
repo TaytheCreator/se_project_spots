@@ -76,16 +76,11 @@
   top: 0;
   right: -52.5px;
   background-image: url(../images/close-btn-preview.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: transparent;
   opacity: 1;
 }
 
 .modal__close-btn_type_preview:hover {
   background-image: url(../images/close-btn-preview-hover.svg);
-  background-color: transparent;
   opacity: 40%;
 }
 
@@ -163,7 +158,6 @@
 
 .modal__submit-btn_disabled {
   cursor: not-allowed;
-  background-color: #212121;
   opacity: 50%;
 }
 

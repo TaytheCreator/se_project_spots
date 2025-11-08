@@ -41,7 +41,7 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostBtn = document.querySelector(".profile__add-btn");
-const newPostSubmitBtn = document.querySelector(".modal__submit-btn");
+const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 const newPostFormEl = newPostModal.querySelector(".modal__form");
 const newPostNameInput = newPostModal.querySelector("#card-caption-input");
 const newPostLinkInput = newPostModal.querySelector("#card-image-input");
@@ -68,7 +68,7 @@ function handleEscClose(evt) {
 }
 
 function handleOverlayClose(evt) {
-  if (evt.target.classList.contains(".modal_is-opened")) {
+  if (evt.target.classList.contains("modal_is-opened")) {
     closeModal(evt.target);
   }
 }
@@ -81,8 +81,8 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
-  document.addEventListener("keydown", handleEscClose);
-  modal.addEventListener("mousedown", handleOverlayClose);
+  document.removeEventListener("keydown", handleEscClose);
+  modal.removeEventListener("mousedown", handleOverlayClose);
 }
 
 const closeButtons = document.querySelectorAll(".modal__close-btn");
@@ -122,7 +122,11 @@ function getCardElement(data) {
 
 function renderCard(item, method = "prepend") {
   const cardElement = getCardElement(item);
-  cardsList.prepend(cardElement);
+  if (method === "prepend") {
+    cardsList.prepend(cardElement);
+  } else {
+    cardsList.append(cardElement);
+  }
 }
 
 function handleEditProfileSubmit(evt) {
@@ -153,14 +157,20 @@ newPostFormEl.addEventListener("submit", handleNewPostSubmit);
 editProfileBtn.addEventListener("click", () => {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  resetValidation(editProfileForm, [
-    editProfileNameInput,
-    editProfileDescriptionInput,
-  ]);
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
   openModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", () => {
+  resetValidation(
+    newPostFormEl,
+    [newPostNameInput, newPostLinkInput],
+    settings
+  );
   openModal(newPostModal);
 });
 

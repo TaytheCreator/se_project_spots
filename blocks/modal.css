@@ -57,7 +57,7 @@
 .modal__close-btn {
   width: 40px;
   height: 40px;
-  background-image: url(../images/close-icon.png);
+  background-image: url(../images/close-btn-preview.svg);
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -67,7 +67,7 @@
 }
 
 .modal__close-btn:hover {
-  background-image: url(../images/close-icon-hover.png);
+  background-image: url(../images/close-btn-preview-hover.svg);
   opacity: 1;
 }
 
@@ -104,7 +104,6 @@
   box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid #21212166;
-  opacity: 40%;
   padding: 16px 12px;
   font-size: 20px;
   cursor: pointer;
@@ -138,6 +137,7 @@
   height: 52px;
   gap: 8px;
   border-radius: 8px;
+  border: none;
   padding: 18px 32px;
   background-color: #212121;
   display: flex;
@@ -226,11 +226,12 @@
 
   .modal__close-btn_type_preview {
     top: -48px;
-    right: 16px;
+    right: 0px;
   }
 
-  .modal__image-container {
-    padding: 0 16px;
+  .modal__caption {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .modal__image {

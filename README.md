@@ -52,7 +52,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 You can watch a full walkthrough of the project in the screencast below:
 
-🔗 [Watch the Screencast on Google Drive](https://drive.google.com/file/d/10DhXu5B-m4WuYW9IohlOcadMDUeCWUwF/view?usp=sharing)
+🔗 [Watch the Screencast on Loom!](https://www.loom.com/share/d7529377323e435aa0360362034605e6)
 
 ---
 

@@ -151,7 +151,6 @@
 
 .modal__submit-btn:hover {
   background-color: #212121cc;
-  transform: scale(1.03);
   transition: all 0.3s ease;
 }
 
